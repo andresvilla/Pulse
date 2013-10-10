@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 a
 {
 	color: #DD4F24;
@@ -40,7 +52,16 @@ header #avatar figcaption
 	display: inline-block;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+	
+}
+header #avatar figcaption:after
+{
+	content: "\e002";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
+
 }
 header #avatar img
 {
@@ -81,8 +102,14 @@ nav #flechita_nav
 }
 nav #flechita_nav a
 {
-	padding: 0.5em 0.5em;
 	text-decoration: none;
+}
+nav #flechita_nav a:after
+{
+	content: "\e001";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.6;
 }
 nav #publicar_nav
 {
@@ -152,6 +179,32 @@ nav #publicar_nav a
 	top:100%;
 	width: 96px;c
 }
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+
+#contenido .item .votacion .down:after
+{
+	content: "\e002";
+	color: red;
+	
+}
+#contenido .item .votacion .up:after
+{
+	content: "\e000";
+	color: green;
+	
+}
+
+
 
 
 
