@@ -143,16 +143,14 @@ nav #publicar_nav a
 }
 
 
-#contenido .item .datos_item
-{
-	text-align: right;
-}
+
 
 #contenido .item .comentarios_item
 {
 	background-color: #878787;
 	border-radius: 4px;
 	color: white;
+	margin: 0 0 0 2em;
 	padding: 4px;
 	position: relative;
 	text-decoration: none;
@@ -168,6 +166,10 @@ nav #publicar_nav a
 	bottom: -9px;
 }
 
+#contenido .item .datos_item
+{
+	text-align: right;
+}
 #contenido .item .datos_item .guardar_item
 {
 	margin: 0 1em 0 1em;
